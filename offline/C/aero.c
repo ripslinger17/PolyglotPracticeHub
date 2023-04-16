@@ -1,7 +1,7 @@
 /*
     Author: Riya Patel
     DOC: 13, April 2023
-    Objective: printing hello world
+    Objective: printing aeroplane
 */
 
 #include <stdio.h>
