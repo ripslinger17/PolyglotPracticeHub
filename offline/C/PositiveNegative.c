@@ -1,7 +1,7 @@
 /*
     Author: Riya Patel
     DOC: 16, April 2023
-    Objective: printing aeroplane
+    Objective: finding if the number is positive or negative
 */
 
 #include <stdio.h>
