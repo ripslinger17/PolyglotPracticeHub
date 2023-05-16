@@ -1,5 +1,7 @@
 {
   "files.associations": {
-    "stdio.h": "c"
-  }
+    "stdio.h": "c",
+    "slightbendTriANGLE.C": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "disabled"
 }
