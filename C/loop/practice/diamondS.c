@@ -7,11 +7,11 @@
 void main()
 {
     
-    // printf("Enter a value: ");
-    // scanf("%d", &value);
+    printf("Enter a value: ");
+    scanf("%d", &value);
 
-    // for (int v = 1; v <= value; v++)
-    // {
+    for (int v = 1; v <= value; v++)
+    {
 
         for (int i = 0; i <= 5; i++)
         {
@@ -38,6 +38,7 @@ void main()
         }
         printf("\n");
     
+    }
     }
 }
 

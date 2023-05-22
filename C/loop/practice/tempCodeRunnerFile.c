@@ -1,14 +1,12 @@
-int i = 0, j = 1;
-    while(i<=5)
-    {
-        
-        while(j<=i)
+for (int i = 0; i <= 5; i++)
         {
-            
-            printf("*");
-            j++;
-        }
-        
-        printf("\n");
-        i++;
-    }
+             for (int j = 5; j >= i; j--)
+             {
+                 printf(" ");
+             }
+             for (int k = 1; k <= i;k++)
+             {
+                 printf(" *");
+             }
+             printf("\n");
+         }
