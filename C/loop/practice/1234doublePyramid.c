@@ -1,7 +1,7 @@
 /*
     Author: Riya Patel
     Doc: 22, May 2023
-    Objective: 1234 diamond
+    Objective: Straight and upside down triangle
 */
 #include <stdio.h>
 void main()

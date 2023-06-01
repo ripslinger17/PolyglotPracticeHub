@@ -13,7 +13,7 @@ int main()
     {
         for (int j = v; j >= i; j--)
         {
-            printf(" ");
+            printf(" "); 
         }
         for (int k = 1; k <= i; k++)
         {
