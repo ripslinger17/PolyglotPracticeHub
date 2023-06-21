@@ -1,6 +1,6 @@
 /*          
     Author : Riya Patel
-    DOC : 31,
+    DOC : 31,june 2023
     May 2023 Objective : minimum medium and maximum
 */
 
@@ -15,42 +15,48 @@ void main()
     printf("enter the value of num3 : ");
     scanf("%d", &c);
 
-    if(a>b && a>c)
+    if(a<=b && a<=c)
     {
-        printf("\na is maximum number");
-    }
-    else if(b>a && b>c)
-    {
-        printf("\nb is maximun");
-    }
-    else if (c > a && c > a)
-    {
-        printf("\nc is maximum");
-    }
-
-    if(a<b && a<c)
-    {
-        printf("\na is minimum");
-    }
-    else if(b<a && b<c)
-    {
-        printf("\nb is minimum");
-    }
-    else if(c<a && c<b)
-    {
-        printf("\nc is minimum");
+        printf("\n%d is small", a);
+        if(b<=c)
+        {
+            printf("\n%d is big",c);
+            printf("\n%d is medium",b);
+        }
+        else
+        {
+            printf("\n%d is big", b);
+            printf("\n%d is medium", c);
+        }
     }
 
-    if(a==b)
+    else if (b <= a && b <= c)
     {
-        printf("\na and b are same");
+        printf("\n%d is small", b);
+        if (a <= c)
+        {
+            printf("\n%d is big", c);
+            printf("\n%d is medium", a);
+        }
+        else
+        {
+            printf("\n%d is big", a);
+            printf("\n%d is medium", c);
+        }
     }
-    else if(b==c)
+
+    else
     {
-        printf("\nb and c are same");
-    }
-    else if (a == c)
-    {
-        printf("\na and c are same");
+        printf("\n%d is small", c);
+        if(a<=b)
+        {
+            printf("\n%d is big", a);
+            printf("\n%d is medium", b);
+        }
+        else
+        {
+            printf("\n%d is big", b);
+            printf("\n%d is medium", a);
+        }
     }
 }

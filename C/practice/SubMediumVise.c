@@ -18,7 +18,7 @@
 int main()
 {
     char e[3] = "eng", h[3] = "hin", g[3] = "guj", medium[5];
-    int Meng, english, hindi, per,gujarati;
+    int Meng, english, hindi, per, gujarati;
     printf("Enter the medium you studies: ");
     scanf("%s", &medium);
     printf("Enter marks you obtainded in english subject: ");
@@ -28,36 +28,25 @@ int main()
     english = strcmp(medium, e);
     if (english == 0)
     {
-        if (e >= 60)
+        if (Meng >= 60 && per >= 75)
         {
-            if (per >= 75)
-            {
-                printf("\nEligible for Addmission");
-            }
-            else
-            {
-                printf("\nNot Eligible");
-            }
+
+            printf("\nEligible for Addmission");
         }
+
         else
         {
             printf("\nNot Eligible");
         }
     }
-    
+
     hindi = strcmp(medium, h);
     if (hindi == 0)
     {
-        if (h >= 70)
+        if (Meng >= 70 && per >= 80)
         {
-            if (per >= 80)
-            {
-                printf("\nEligible for Addmission");
-            }
-            else
-            {
-                printf("\nNot Eligible");
-            }
+
+            printf("\nEligible for Addmission");
         }
         else
         {
@@ -68,20 +57,15 @@ int main()
     gujarati = strcmp(medium, g);
     if (gujarati == 0)
     {
-        if (g >= 70)
+        if (Meng >= 70 && per >= 80)
         {
-            if (per >= 80)
-            {
-                printf("\nEligible for Addmission");
-            }
-            else
-            {
-                printf("\nNot Eligible");
-            }
+
+            printf("\nEligible for Addmission");
         }
         else
         {
             printf("\nNot Eligible");
         }
     }
+    
 }

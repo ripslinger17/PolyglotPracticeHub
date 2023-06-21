@@ -1,2 +1,1 @@
-printf("Enter the medium you studies: ");
-    // scanf("%c", &medium);
+n1 = n1 / 10;
