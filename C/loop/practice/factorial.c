@@ -10,10 +10,16 @@ int main()
     int n,sum=1,i=1;
     printf("Enter the number: ");
     scanf("%d", &n);
-    while(i<=n)
+    // while(i<=n)
+    // {
+    //     sum = sum * i;
+    //     i++;
+    // }
+    // printf("%d", sum);
+    do
     {
         sum = sum * i;
         i++;
-    }
-    printf("%d", sum);
+    } while (i <= n);
+    printf("\n%d", sum);
 }

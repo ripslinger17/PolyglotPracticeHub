@@ -7,25 +7,31 @@
 #include <stdio.h>
 void main()
 {
-    int f, l,p,c;
+    int f, l, p, c, flag = 1;
     printf("enter the starting number: ");
     scanf("%d", &f);
     printf("enter the last number: ");
     scanf("%d", &l);
 
-    for (int i = f; i <= l;i++)
+    for (int i = f; i <= l; i++)
     {
-        c = 0;
-        for (int j = 1; j <= i; j++)
+        flag = 1;
+        for (int j = 2; j <= i; j++)
         {
-            if(i%j==0)
+            if (i % j == 0)
             {
-                c++;
+                flag = 0;
+                break;
             }
+            
         }
-        if(c==2)
+        if (flag == 1)
         {
-            printf("%d\n", i);
+            printf("\n%d is prime", i);
+        }
+        else
+        {
+            printf("\n%d is not prime", i);
         }
     }
 }

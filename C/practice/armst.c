@@ -1,7 +1,7 @@
 /*
     Author : Riya Patel
     DOC : 20 June,2023
-    Objective : number is armstrong or not inputed by user
+    Objective : number is armstrong or not inputed by user in range
 */
 
 #include <stdio.h>
