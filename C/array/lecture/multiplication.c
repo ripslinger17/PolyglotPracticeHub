@@ -35,7 +35,7 @@ void main()
             {
                 sum = sum + a[k][j] * b[j][i];
             }
-            c[i][j] = sum;
+            c[k][i] = sum;
         }
     }
 

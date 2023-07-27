@@ -21,22 +21,22 @@ You should use these functions in your program: login(), deposit(), withdraw(), 
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-void Login()
+int Login()
 {
-    char p[20], u[20], check = 0, cp[20], cu[20], uc = 0, up = 0;
+    char p[20], u[20], cp[20], cu[20], uc, up;
     printf("\nCREATE ACCOUNT");
     printf("\nENTER YOUR USERNAME: ");
-    scanf("%s", &u);
+    scanf("%s", u);
     printf("\nENTER YOUR PASSWORD: ");
-    scanf("%s", &p);
+    scanf("%s", p);
     printf("\nSUCESSFULLY CREATED ACCOUNT");
     printf("\nLOGIN TO YOUR ACCOUNT");
     while (1)
     {
         printf("\nENTER YOUR USERNAME: ");
-        scanf("%s", &cu);
+        scanf("%s", cu);
         printf("\nENTER YOUR PASSWORD: ");
-        scanf("%s", &cp);
+        scanf("%s", cp);
         uc = strcmp(cu, u);
         up = strcmp(cp, p);
         if (uc == 0 && up == 0)
@@ -51,58 +51,77 @@ void Login()
     }
 }
 
-void deposite(balance)
+int deposite(int balance)
 {
-    int balance, deposite;
+    int deposite;
     printf("\nENTER THE AMOUNT YOU WANT TO DEPOSITE: ");
     scanf("%d", &deposite);
-    balance = deposite + balance;
-    printf("\nYOUR ACCOUNT CONTAINS %d AMOUNT", balance);
+    balance = balance + deposite;
+    return balance;
 }
-void withdraw(balance)
+
+int withdraw(int balance)
 {
-    int sub;
+    int w;
     printf("\nENTER THE AMOUNT YOU WANT TO WITHDRAW: ");
-    scanf("%d", &sub);
-    if (balance >= 10000 + sub)
+    scanf("%d", &w);
+    if(balance>=10000+w)
     {
-        balance = balance - sub;
-        printf("\nYOUR AMOUNT CONTAINS: %d", sub);
+        balance = balance - w;
         return balance;
     }
     else
     {
-        printf("\nYOUR TRANSACTION IS INVALID");
-        printf("\nYOUR BALANCE HAS TO BE ATLEAST 10000");
+        printf("\nYOUR BALANCE IN THE BANK HAS TO BE ATLEAST 10000");
+        printf("\nPLEASE TRY AGAIN");
+        return balance;
     }
 }
-void checkBalance(balance)
+
+int checkBalance(int balance)
 {
-    printf("\nYOUR TOTAL BALANCE IS : %d", balance);
+    printf("\nYOUR CURRENT BANK BALANCE CONSIST OF %d", balance);
+    return balance;
 }
+
 int main()
 {
-    int a,money=25000;
+    int a, d, w;
+   
     Login();
+    int balance = 25000;
     while (1)
     {
-        printf("\nWHAT YOU WANT TO DO IN YOUR ACCOUNT ");
+
+        printf("\n\nWHAT YOU WANT TO DO IN YOUR ACCOUNT ");
         printf("\n1......DEPOSITE");
         printf("\n2......WITHDRAW");
         printf("\n3......CHECKBALANCE");
         printf("\n4......EXIT");
+        printf("\nenter your choice:");
         scanf("%d", &a);
         switch (a)
         {
+            
         case 1:
-            deposite();
+            balance = deposite(balance);
+            printf("\nYOUR ACCOUNT CONSIST OF %d", balance);
+            break;
 
         case 2:
-            withdraw();
+            balance = withdraw(balance);
+            printf("\nYOUR ACCOUNT CONSIST OF %d", balance);
+            break;
+
         case 3:
-            checkBalance();
+            checkBalance(balance);
+            break;
         case 4:
             exit(0);
+
+        default:
+            printf("\nPLEASE ENTER VALID INPUT");
         }
     }
 }
+
