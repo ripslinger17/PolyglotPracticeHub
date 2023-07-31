@@ -4,49 +4,42 @@
     Objective: Straight Diamond
 */
 #include <stdio.h>
-void main()
+int main()
 {
-    
+    int value, v, i, j, r, k, l;
+
+    printf("Enter the height of pyramid: ");
+    scanf("%d", &r);
     printf("Enter a value: ");
     scanf("%d", &value);
 
     for (int v = 1; v <= value; v++)
     {
 
-        for (int i = 0; i <= 5; i++)
+        for (int i = 0; i <= r; i++)
         {
-             for (int j = 5; j >= i; j--)
-             {
-                 printf(" ");
-             }
-             for (int k = 1; k <= i;k++)
-             {
-                 printf(" *");
-             }
-             printf("\n");
-         }
+            for (int j = r; j >= i; j--)
+            {
+                printf(" ");
+            }
+            for (int k = 0; k < i; k++)
+            {
+                printf(" *");
+            }
+            printf("\n");
+        }
 
-    for (int i = 0; i <= 5; i++)
-    {
-        for (int j = 1; j <= i; j++)
+        for (int i = 0; i <= r; i++)
         {
-            printf(" ");
+            for (int j = 0; j <= i; j++)
+            {
+                printf(" ");
+            }
+            for (int k = r; k > i; k--)
+            {
+                printf(" *");
+            }
+            printf("\n");
         }
-        for (int k = 5; k >= i;k--)
-        {
-            printf(" *");
-        }
-        printf("\n");
-    
-    }
     }
 }
-
-// for (int i = 0; i <= 5; i++)
-// {
-//     for (int j = 5; j >= i; j--)
-//     {
-//         printf("*");
-//     }
-//     printf("\n");
-// }

@@ -1,30 +1,18 @@
 #include<stdio.h>
-int main()
+void main()
 {
-    int a[6], temp, i, n, j, k;
-    printf("enter a number:");
-    scanf("%d", &n);
-    printf("enter numbers in array:");
-    for (k = 0; k <= n; k++)
+    int i, j, k, l;
+    for (j = 5; j > 5; j--)
     {
-        scanf("%d", &a[i]);
+        printf(".");
     }
-    for (i = 0; i <= n; i++)
+    for (k = 0; k <= 5; k++)
     {
-        for (j = i + 1; j <= n; j++)
-        {
-            if (a[i] > a[j])
-            {
-                temp = a[i];
-                a[i] = a[j];
-                a[j] = temp;
-            }
-        }
+        printf(" *");
     }
-    for (i = 0; i <= n; i++)
-    {
 
-        printf("%d\n", a[i]);
+    for (j = 5; j > 5; j--)
+    {
+        printf(".");
     }
-   
 }

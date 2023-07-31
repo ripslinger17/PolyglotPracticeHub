@@ -26,7 +26,7 @@ void main()
     for (i = 0; i < r; i++)
     {
         mul = 0;
-        for (j = 0; j < r; j++)
+        for (j = 1; j < r; j++)
         {
             mul = a[0][j] * ((a[1][i] * a[2][j]) - (a[1][j] * a[2][i]));
         }

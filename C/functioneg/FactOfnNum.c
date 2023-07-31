@@ -21,19 +21,37 @@
 //     n();
 // }
 
-void n(int num)
+// void n(int num)
+// {
+//     int fact = 1;
+//     for (int i = 1; i <= num; i++)
+//     {
+//         fact = fact * i;
+//     }
+//     printf("%d", fact);
+// }
+// void main()
+// {
+//     int num;
+//     printf("enter the number :");
+//     scanf("%d", &num);
+//     n(num);
+// }
+
+int fact(int f)
 {
-    int fact = 1;
-    for (int i = 1; i <= num; i++)
+    int i;
+    if(f<=1)
     {
-        fact = fact * i;
+        return 1;
     }
-    printf("%d", fact);
+    return f*fact(f-1);
 }
-void main()
+int main()
 {
-    int num;
-    printf("enter the number :");
-    scanf("%d", &num);
-    n(num);
+    int f;
+    printf("\nEnter a number:");
+    scanf("%d", &f);
+    int result = fact(f);
+    printf("\nresult: %d", result);
 }

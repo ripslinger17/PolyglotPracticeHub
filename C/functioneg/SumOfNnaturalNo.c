@@ -5,18 +5,39 @@
 */
 
 #include<stdio.h>
-void n()
+// void n()
+// {
+//     int sum=0,num;
+//     printf("enter the number :");
+//     scanf("%d", &num);
+//     for (int i = 0; i <=num; i++)
+//     {
+//         sum = sum + i;
+//     }
+//     printf("%d", sum);
+// }
+// void main()
+// {
+//     n();
+// }
+
+int sum(int k)
 {
-    int sum=0,num;
-    printf("enter the number :");
-    scanf("%d", &num);
-    for (int i = 0; i <=num; i++)
+    if(k>0)
     {
-        sum = sum + i;
+        return k + sum(k - 1);
     }
-    printf("%d", sum);
+    else
+    {
+        return 0;
+    }
+    
 }
-void main()
+int main()
 {
-    n();
+    int k;
+    printf("\nENTER A NUMBER: ");
+    scanf("%d", &k);
+    int result = sum(k);
+    printf("\nresult= %d", result);
 }
