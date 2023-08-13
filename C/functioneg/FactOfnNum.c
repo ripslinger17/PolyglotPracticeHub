@@ -40,7 +40,6 @@
 
 int fact(int f)
 {
-    int i;
     if(f<=1)
     {
         return 1;
