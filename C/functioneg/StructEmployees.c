@@ -14,7 +14,7 @@ struct employees
 {
     int id, salary;
     char name[15], position[20];
-} e[5];
+} e[3];
 
 int display(emp)
 {
@@ -67,6 +67,30 @@ int delete(emp)
     
 }
 
+int update(emp)
+{
+    int u;
+    printf("\nENTER THE INDEX YOU WANT TO UPDATE");
+    scanf("%d", &u);
+    if (u <= 0 || u > emp)
+    {
+        printf("\nYOU HAVE ENTERED INVALID VALUES \nPLEASE TRY AGAIN");
+        return emp;
+    }
+    else
+    {
+        printf("\nEnter the id of %d employee: ", u);
+        scanf("%d", &e[u].id);
+        printf("\nEnter the name of %d employee: ", u);
+        scanf("%s", &e[u].name);
+        printf("\nEnter the position of %d employee: ", u);
+        scanf("%s", &e[u].position);
+        printf("\nEnter the salary of %d employee: ", u);
+        scanf("%d", &e[u].salary);
+        return emp;
+    }
+}
+
 int main()
 {
 
@@ -85,7 +109,7 @@ int main()
     while (1)
     {
         int s;
-        printf("\n1.....DISPLAY\n2.....CREATE\n3.....DELETE\n4.....EXIT\n");
+        printf("\n1.....DISPLAY\n2.....CREATE\n3.....DELETE\n4.....UPDATE\n5.....EXIT\n");
         scanf("%d", &s);
         switch (s)
         {
@@ -102,6 +126,10 @@ int main()
             break;
 
         case 4:
+            emp = update(emp);
+            break;
+
+        case 5:
             exit(0);
 
         default:
