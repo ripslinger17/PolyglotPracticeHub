@@ -29,9 +29,10 @@ int display(emp)
 
 int create(emp)
 {
+    int t;
     printf("\nEnter the information of the employee you want to create: ");
     emp = emp + 1;
-    for (int i = emp; i < emp + 1; i++)
+    for (int i = emp; i < emp+1; i++)
     {
         printf("\nEnter the id of %d employee: ", i);
         scanf("%d", &e[i].id);

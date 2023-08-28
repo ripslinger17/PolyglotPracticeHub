@@ -4,12 +4,9 @@
     Objective : find if the number is prime or not
 */
 
-#include<stdio.h>
-void p()
-{
-    int num;
-    printf("Enter a number: ");
-    scanf("%d", &num);
+#include <stdio.h>
+int prime(int num)
+{ 
     int flag = 0;
     for (int j = 2; j < num; j++)
     {
@@ -27,9 +24,14 @@ void p()
     {
         printf("\n%d num is not prime", num);
     }
+   
 }
 
-void main()
+int main()
 {
-    p();
+    int num;
+    printf("Enter a number: ");
+    scanf("%d", &num);
+    prime(num);
+    return 0;
 }
