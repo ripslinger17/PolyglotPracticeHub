@@ -4,3 +4,10 @@ lst = [5, 3, 8, 1, 9, 2, 7, 4]
 2. Write a Python program to count the number of strings from a given list of strings. The string length is 2 or more and the first and last characters are the same.
 Sample List : ['abc', 'xyz', 'aba', '1221']
 Expected Result : 2
+
+prarthna mam
+s1='strings are IMMUTABLE so, methods of strings cannot change the original string. Instead'
+#
+# Output:- 1) print IMMUTABLE using slicing 
+#          2) print Insted using slicing
+#          3) skip alternate character and print the new string
