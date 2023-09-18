@@ -11,3 +11,5 @@ s1='strings are IMMUTABLE so, methods of strings cannot change the original stri
 # Output:- 1) print IMMUTABLE using slicing 
 #          2) print Insted using slicing
 #          3) skip alternate character and print the new string
+
+
