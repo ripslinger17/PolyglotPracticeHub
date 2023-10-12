@@ -1,19 +1,23 @@
-#include<stdio.h>
-#include<stdlib.h>
-#include<string.h>
+// Ask 10 integers from user and store all the even numbers from the input to a file named 'even.txt'
+
+#include <stdio.h>
 int main()
 {
-    FILE *ptr=NULL;
-    char ch,str[100];
-    ptr = fopen("r.txt", "r");
-    if(ptr==NULL)
+    FILE *hell;
+    int i,a[10];
+    for (i = 0; i < 10;i++)
     {
-        printf("\nERROR");   
+        scanf("%d", &a[i]);
     }
-    printf("\nEnter the word you want to append ");
-    gets(str);
-    ptr = fwrite(str,sizeof(str),strlen(str),"r.txt");
-    fputs(str, ptr);
-    printf("\nSUCCESSFULLY APPENDED");
-    fclose(ptr);
+
+    hell = fopen("even.txt", "w");
+    fprintf(hell, "Even numbers: ");
+    for (i = 0; i < 10; i++)
+    {
+        if(a[i]%2==0)
+        {
+            fprintf(hell, "\n %d", a[i]);
+        }
+    }
+    fclose(hell);
 }
