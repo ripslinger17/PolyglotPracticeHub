@@ -70,7 +70,7 @@ keys=["",""]'''
 # n=int(input())
 # dic={'Theodore': 19, 'Roxanne': 20, 'Mathew': 21, 'Betty': 20}
 # print(test(dic,n))
-# ///////////
+
 # n1=[]
 # for keys,values in dic.items(): 
 #     if values == n: n1.append(keys)
