@@ -8,9 +8,14 @@
 // ans = isEligible(true, 19)
 // console.log(ans)
 
-const checkName = (name) => name[1] ? (name.length > 4 ? "Perfect" : "Not greater than 4") : "Name too short";
+const checkName = (name) =>
+    name[0]=="R"||"r" ?
+        name.length > 4 ?
+            "Perfect" :
+        "Name too short" :
+    "not starting with R";
 
-const name1 = "John";  // Example value for name1
+var name1 = "rohan"; 
 var ans = checkName(name1);
 console.log(ans);
 
