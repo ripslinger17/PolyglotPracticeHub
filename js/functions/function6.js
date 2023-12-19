@@ -9,13 +9,12 @@
 // console.log(ans)
 
 const checkName = (name) =>
-    name[0]=="R"||"r" ?
+    name[0] == "R" || "r" ?
         name.length > 4 ?
             "Perfect" :
-        "Name too short" :
-    "not starting with R";
+            "Name too short" :
+        "not starting with R"
 
-var name1 = "rohan"; 
+var name1 = "rohan";
 var ans = checkName(name1);
 console.log(ans);
-
