@@ -34,3 +34,5 @@ int main()
     t1.factorial(a);
     return 0;
 }
+
+//passing object into parameters
