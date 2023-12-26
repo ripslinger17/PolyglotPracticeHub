@@ -35,4 +35,3 @@ int main()
     return 0;
 }
 
-//passing object into parameters
