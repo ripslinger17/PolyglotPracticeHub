@@ -5,7 +5,7 @@ class Student
 {
 
 public:
-    Student(int id, char name[20])
+    Student(int id, char name[20]="Riya") // or make it default
     {
         cout << "\n Student constructor called";
         cout << "\n parameterized constructor called";
@@ -16,5 +16,5 @@ public:
 
 int main()
 {
-    Student s1(100, "Ravi"); // have to pass the parameter in parametarize constructor
+    Student s1(100); // have to pass the parameter in parametarize constructor
 }
