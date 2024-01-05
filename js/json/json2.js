@@ -32,3 +32,28 @@ var college = {
 }
 
 comsole.log(college)
+
+
+
+
+
+var nykaa = {
+    name: "NYKAA",
+    website: "www.nykaa.com",
+    products: ["lipstick", "eyeliner", "makup"],
+    founders: ["Falguni Nayar"],
+    brandesUnderNykaa: [
+        'Nykaa House of Brands',
+        'Nykaa Naturals', 
+        'Nykaa Cosmetics',
+        'Kay Beauty',
+        'Nykaa Fashion',
+        'Pipa Bella'
+    ],
+    nykaaSharePrice: 174,
+    launchDate: 'April 2012, India',
+    meaning: 'one in the spotlight',
+    store: 'Vastrapur, Ahmedabad'
+}
+
+console.log(nykaa)
