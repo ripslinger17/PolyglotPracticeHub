@@ -17,4 +17,6 @@ public:
 int main()
 {
     Student s1(100); // have to pass the parameter in parametarize constructor
+    Student s2(200);
 }
+
