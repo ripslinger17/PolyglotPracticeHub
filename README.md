@@ -9,7 +9,7 @@ PolyglotPracticeHub is a space dedicated to practicing and mastering various pro
 ## Features
 
 - **Multi-Language Support:** Explore a curated collection of exercises and challenges tailored for different programming languages.
-- **Structured Learning:** Progress through organized sections that cover fundamental concepts to advanced topics in each language.
+- **Structured Learning:** Progress through organized sections that cover fundamental concepts to advanced topics in each language (in progress).
 - **Contribution:** Contribute your own challenges or solutions to help others learn and improve.
 
 ## Getting Started
@@ -22,14 +22,10 @@ PolyglotPracticeHub is a space dedicated to practicing and mastering various pro
 
 - Python
 - JavaScript
-- Java
-- Ruby
 - C++
-- [Add more languages as you expand your repertoire]
-
-## How to Contribute
-
-If you have an interesting challenge, solution, or improvement to share, please follow the contribution guidelines in the [CONTRIBUTING.md](CONTRIBUTING.md) file.
+- HTML/CSS (scripting language)
+- SQL (Qeuries)
+- C
 
 ## Feedback and Support
 
